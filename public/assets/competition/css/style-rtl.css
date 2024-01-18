@@ -1,0 +1,216 @@
+.top-navbar .side-menu {
+    float: left !important;
+}
+.top-navbar .nav-link-icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.inline-search .inline-search-row .search-btn {
+    right: auto;
+    left: 5px;
+}
+
+.hero .hero-content h1 {
+    line-height: 55px;
+}
+.hero .overlay:after {
+    background: url("../images/SVG/header.svg");
+}
+
+
+.offer-links .offer-links-list li:first-child {
+    padding: 0 25px;
+    padding-right: 0;
+}
+.offer-links .offer-links-list li:last-child {
+    padding: 0 25px;
+    padding-left: 0;
+}
+.offer-links .offer-links-list .icon-box {
+    float: right;
+}
+.offer-links .offer-links-list h4 {
+    padding-right: 20px;
+    padding-left: 0;
+}
+.offer-links .offer-links-list h4 {
+    float: right !important;
+}
+
+.product-popup .product-info .old-new-price .new-price {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.product-popup .product-info .location p {
+    padding-right: 45px;
+}
+.product-popup .product-info .location .icon-box {
+    right: 0;
+}
+.product-popup .product-info {
+    padding-left: 40px;
+    padding-right: 0;
+}
+
+
+.offers .product .product-info .old-new-price .new-price {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+
+.subscribe-form .form-box form .kayo-btn {
+    left: 0;
+    right: auto;
+}
+
+.product-popup .popup-content .close-product {
+    right: auto;
+    left: 20px;
+}
+.product-popup .popup-content .gift-box-bg {
+    right: auto;
+    left: 20px;
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+.login-popup .card-bg:after {
+    right: auto;
+    left: 50%;
+    -webkit-transform-origin: center left;
+    -moz-transform-origin: center left;
+    -ms-transform-origin: center left;
+    -o-transform-origin: center left;
+    transform-origin: center left;
+}
+.login-popup .popup-content .close-login {
+    right: auto;
+    left: 20px;
+}
+.login-popup.register-done .card-bg:after {
+    right: auto;
+    left: -110%;
+}
+
+
+.categories a span {
+    float: left;
+}
+
+
+/* Dashboard */
+.dashboard-slide-menu {
+    right: 0;
+    left: auto;
+}
+.top_navbar {
+    left: auto;
+    right: 260px;
+}
+.top_navbar .pull-left {
+    float: right !important;
+}
+.top_navbar .pull-right {
+    float: left !important;
+}
+.top_navbar .icon-list > li > a, .top_navbar .icon-list > li > span {
+    border-left: 0;
+    border-right: 1px solid #EEE;
+}
+.dash-page-title .icon-box {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.top_navbar .icon-list > li .points .points-num {
+    margin-left: 0;
+    margin-right: 15px;
+}
+.bootstrap-select .dropdown-menu > li > a i, .top_navbar .dropdown-menu > li > a i {
+    margin-right: 0;
+    margin-left: 7px;
+}
+
+.dashboard-slide-menu .dash_links a span {
+    left: 17px;
+    right: auto;
+}
+.dashboard-slide-menu .dash_links a i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.dash_page_content {
+    padding-right: 290px;
+    padding-left: 30px;
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner {
+    padding-right: 0;
+    padding-left: 25px;
+}
+.bootstrap-select .dropdown-toggle .filter-option {
+    text-align: right;
+}
+.bootstrap-select .dropdown-toggle .caret {
+    right: auto;
+    left: 12px;
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+    right: auto;
+    left: 15px;
+}
+.bootstrap-select.show-tick .dropdown-menu li a span.text {
+    margin-left: 34px;
+    margin-right: 0;
+}
+
+
+.page {
+    right: 0;
+    left: auto;
+}
+
+
+@media (max-width: 767px) {
+    .top-navbar .menu-toggle {
+        float: left;
+    }
+    .top-navbar .side-menu {
+        left: auto;
+        right: -280px;
+    }
+    .top-navbar.mobile-menu-active .side-menu {
+        right: 0;
+        left: auto;
+    }
+    .offer-links .offer-links-list h4 {
+        text-align: right;
+    }
+
+
+    .dashboard-slide-menu {
+        right: -260px;
+    }
+    .dashboard-slide-menu.active {
+        right: 0;
+    }
+    .top_navbar {
+        right: 0;
+    }
+    .mobile-menu-active .top_navbar {
+        right: 260px;
+        left: auto;
+    }
+    .mobile-menu-active .page {
+        right: 260px;
+        left: auto;
+    }
+}
+@media (max-width: 360px) {
+    .offer-links .offer-links-list h4 {
+        padding-right: 9px;
+        text-align: right;
+    }
+}

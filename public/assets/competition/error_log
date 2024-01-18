@@ -1,0 +1,2 @@
+[18-Sep-2018 15:24:19 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/anafayez/public_html/competition/getWinner.php on line 33
+[18-Sep-2018 15:26:10 America/Chicago] PHP Parse error:  syntax error, unexpected '';">تم السحب</button>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/anafayez/public_html/competition/getWinner.php on line 37
