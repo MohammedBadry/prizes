@@ -55,7 +55,7 @@
                                                         <tbody>
                                                             @foreach($users as $key=>$user)
                                                             <tr>
-                                                                <td>{{ $key+ $users->firstItem() }}<td>
+                                                                <td>{{ $key+ $users->firstItem() }}</td>
                                                                 <td>{{$user->name}}</td>
                                                                 <td>{{$user->mobile}}</td>
                                                                 <td>{{$user->code}}</td>
