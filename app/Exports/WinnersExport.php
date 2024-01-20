@@ -4,8 +4,9 @@ namespace App\Exports;
 
 use App\Models\User;
 use Maatwebsite\Excel\Concerns\FromCollection;
+use Maatwebsite\Excel\Concerns\WithHeadings;
 
-class WinnersExport implements FromCollection
+class WinnersExport implements FromCollection, WithHeadings
 {
     public function collection()
     {
@@ -23,4 +24,12 @@ class WinnersExport implements FromCollection
         return $winners;
     }
 
+    public function headings(): array
+    {
+        return [
+            'الاسم',
+            'رقم الجوال',
+            'تاريخ الفوز'
+        ];
+    }
 }

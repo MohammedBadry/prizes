@@ -149,8 +149,6 @@ class Users extends Controller {
 			$data['password'] = bcrypt(request('password'));
 		}
 
-		$data['status'] = request('status');
-
 		if (request()->hasFile('photo_profile')) {
 			it()->delete($users->photo_profile);
 			$data['photo_profile'] = it()->upload('photo_profile', 'users');

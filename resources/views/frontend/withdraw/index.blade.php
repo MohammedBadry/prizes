@@ -32,9 +32,7 @@
         زمن السحب
     </a>
 </nav>
-<?php
-//include('header.php');
-?>
+
 <div class="kayo-game-container">
     <div id="ezslots1"></div>
 </div>
@@ -111,7 +109,7 @@ $(function(){
 		var digits = winNum.toString().split('');
 		var realDigits = digits.map(Number);
 
-		var callbackFunction = function(result){
+        var callbackFunction = function(result){
 		    audio.pause();
 					$.ajax({
 						type: "POST",

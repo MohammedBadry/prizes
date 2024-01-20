@@ -35,8 +35,8 @@ class UsersRequest extends FormRequest {
 	protected function onUpdate() {
 		return [
 			'name' => 'required|string',
-			//'email' => 'required|email|unique:users,email,' . request()->segment(3),
-			'mobile' => 'required|regex:/[0-9]{8}/|unique:users,mobile,' . request()->segment(3),
+			//'email' => 'required|email|unique:users,email,' . request()->segment(2),
+			'mobile' => 'required|regex:/[0-9]{8}/|unique:users,mobile,' . request()->segment(2),
 			'code' => 'nullable|string',
 			//'photo_profile' => '' . it()->image() . '|nullable|sometimes',
 			//'password' => 'sometimes|nullable|max:255|min:6',

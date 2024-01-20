@@ -25,7 +25,7 @@ class WithdrawController extends Controller {
 
 	public function getWinner($mobile) {
 		$winner = User::where(['type' => 'user', 'is_winner' => 0])->where('mobile', $mobile)->first();
-        $winner->is_winner = 1;
+        //$winner->is_winner = 1;
         $winner->win_date = date('Y-m-d H:i:s');
         $winner->save();
 
@@ -33,8 +33,9 @@ class WithdrawController extends Controller {
     }
 
 	public function updateTimeSeetings($time) {
-        if($time>12) {
-            echo "يجب ألا يزيد الوقت عن 120 ثانية";
+        if($time<5 || $time>120) {
+            echo "يجب أن يكون الوقت بين 10 و 120 ثانية";
+			exit;
         }
         $settings = Setting::first();
         $settings->time = $time;

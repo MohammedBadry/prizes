@@ -23,7 +23,7 @@ class User extends Authenticatable
         'mobile',
         'code',
         'password',
-        'is_admin',
+        'type',
         'is_winner',
         'win_date',
     ];

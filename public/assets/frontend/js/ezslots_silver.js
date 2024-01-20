@@ -43,9 +43,9 @@ function EZSlots(id,useroptions){
 	//add the various symbols - but take care to possibly add the "winner" as the symbol chosen
 	this.addSymbolsToStrip = function(jqoSlider, whichReel, shouldWin, isInitialCall){
 		var symbolsToUse = that.sameSymbolsEachSlot ? that.symbols : that.symbols[whichReel];
-		var chosen =  shouldWin ? that.winningSet[whichReel] : Math.floor(Math.random()*symbolsToUse.length);
+		var chosen =  that.winningSet[whichReel];
 		for(var i = 0; i < that.howManySymbolsToAppend; i++){
-			var ctr = (i == that.endingLocation) ? chosen : Math.floor(Math.random()*symbolsToUse.length);
+			var ctr = chosen;
 			if(i == 0 && isInitialCall && that.startingSet){
 				ctr = that.startingSet[whichReel];
 			}
