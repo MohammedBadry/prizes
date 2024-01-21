@@ -105,11 +105,18 @@ class Users extends Controller {
               application/vnd.ms-excel, application/vnd.msexcel,
               text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
            ]);
-          if ($validator->fails()) {
-             return back()
+          	if($validator->fails()) {
+             	return back()
                     ->with('error', 'هذا الملف غير مسموح به');
            }
-           $import = \Maatwebsite\Excel\Facades\Excel::import(new \App\Imports\UsersImport, $request->file('excel_file'));
+		   //delete old users (not winners)
+		   \DB::table('users')->where(['type' => 'user', 'is_winner' => 0])->delete();
+
+		   $import = \Maatwebsite\Excel\Facades\Excel::import(new \App\Imports\UsersImport, $request->file('excel_file'));
+
+		   /*foreach(User::where('is_winner', 0)->get() as $user) {
+				$user->delete();
+		   }*/
 
             return redirectWithSuccess(url('users'), 'جاري الاستيراد يرجى الانتظار قليلا');
         } else {

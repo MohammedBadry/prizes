@@ -82,6 +82,7 @@
 <script src="{{ url('assets') }}/frontend/js/plugins.js"></script>
 <script src="{{ url('assets') }}/frontend/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+    var base_url = "{{url('/')}}";
 $.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

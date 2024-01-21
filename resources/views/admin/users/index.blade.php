@@ -92,6 +92,9 @@
                                         <div class="row gy-4">
                                             <div class="col-sm-12">
                                                 <div class="form-group">
+                                                    <label class="form-label" for="default-06" style="color: red">***ملحوظة: سيتم حذف المستخدمين الحاليين عند استيراد مستخدمين جدد</label>
+                                                </div>
+                                                <div class="form-group">
                                                     <label class="form-label" for="default-06">الملف</label>
                                                     <a href="{{asset('assets/dashboard/excel/users_template.xlsx')}}" style="float: left"> تحميل النموذج <em class="icon ni ni-download"></em></a>
                                                     <div class="form-control-wrap">
