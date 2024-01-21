@@ -26,7 +26,7 @@
         لوحة التحكم
     </a>
     <span class="slogan">
-        <img src="{{url('assets')}}/frontend/images/slogan_silver.png" alt="">
+        <img src="{{url('assets')}}/frontend/images/rasheed_logo.png">
     </span>
     <a href="#" class="pull-right open-edit-popUp">
         زمن السحب
@@ -53,7 +53,7 @@
                 <span class="winner_name"></span>
             </p>
             <p class="winner-number">
-                رقم الفائز <span class="winner_number"></span>
+                رقم الفائز <span class="winner_number" style="direction: ltr;"></span>
             </p>
             <div class="done-btn">
                 <button class="kayo-btn gradient-blue-btn" onclick="window.location='';">تم السحب</button>
@@ -106,7 +106,8 @@ $(function(){
 		var stop_audio = new Audio('assets/frontend/audio/stop.mp3');
 		//setting up some sample set sof things we can make a slot machine of
 		var numbers = ['<img src="{{url("assets")}}/frontend/images/silver/0.png">','<img src="{{url("assets")}}/frontend/images/silver/1.png">','<img src="{{url("assets")}}/frontend/images/silver/2.png">','<img src="{{url("assets")}}/frontend/images/silver/3.png">','<img src="{{url("assets")}}/frontend/images/silver/4.png">','<img src="{{url("assets")}}/frontend/images/silver/5.png">','<img src="{{url("assets")}}/frontend/images/silver/6.png">','<img src="{{url("assets")}}/frontend/images/silver/7.png">','<img src="{{url("assets")}}/frontend/images/silver/8.png">','<img src="{{url("assets")}}/frontend/images/silver/9.png">'];
-		var digits = winNum.toString().split('');
+        hasedNum = winNum.replace(winNum.substring(3,6), "***");
+		var digits = hasedNum.toString().split('');
 		var realDigits = digits.map(Number);
 
         var callbackFunction = function(result){
@@ -116,7 +117,7 @@ $(function(){
             			url: "{{url('get-winner')}}/"+winNum,
 						success: function(res) {
 							$('.winner_name').html(res);
-							$('.winner_number').html(winNum);
+							$('.winner_number').html(hasedNum);
 						    $('.kayo-popUp').show();
 						}
 					});

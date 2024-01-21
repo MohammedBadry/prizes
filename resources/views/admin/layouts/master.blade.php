@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="">
+    <link rel="shortcut icon" href="{{ url('assets') }}/frontend/images/rasheed_logo.png">
     <!-- Page Title  -->
     <title>{{!empty($title)?$title:trans('admin.dashboard')}}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">

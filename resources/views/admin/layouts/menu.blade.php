@@ -3,9 +3,9 @@
       <div class="nk-sidebar-element nk-sidebar-head">
           <div class="nk-sidebar-brand">
               <a href="{{url('dashboard')}}" class="logo-link nk-sidebar-logo">
-                    <img class="logo-light logo-img" src="{{url('assets')}}/dashboard/images/logo.png" srcset="{{url('assets')}}/dashboard/images/logo2x.png 2x" alt="logo">
-                    <img class="logo-dark logo-img" src="{{url('assets')}}/dashboard/images/logo-dark.png" srcset="{{url('assets')}}/dashboard/images/logo-dark2x.png 2x" alt="logo-dark">
-                    <img class="logo-small logo-img logo-img-small" src="{{url('assets')}}/dashboard/images/logo-small.png" srcset="{{url('assets')}}/dashboard/images/logo-small2x.png 2x" alt="logo-small">
+                    <img class="logo-light logo-img" style="width: 50px;" src="{{url('assets')}}/frontend/images/rasheed_logo.png" srcset="{{url('assets')}}/frontend/images/rasheed_logo.png 2x" alt="logo">
+                    <img class="logo-dark logo-img" style="width: 50px;" src="{{url('assets')}}/frontend/images/rasheed_logo.png" srcset="{{url('assets')}}/frontend/images/rasheed_logo.png 2x" alt="logo-dark">
+                    <img class="logo-small logo-img logo-img-small" src="{{url('assets')}}/frontend/images/rasheed_logo.png" srcset="{{url('assets')}}/frontend/images/rasheed_logo.png 2x" alt="logo-small">
       </a>
           </div>
           <div class="nk-menu-trigger mr-n2">
